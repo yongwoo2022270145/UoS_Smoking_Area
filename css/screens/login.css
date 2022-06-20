@@ -1,0 +1,142 @@
+@font-face {
+  font-family:'NOto';
+  src: url('./font/NotoSerifCJKkr-Black.woff') format('woff');
+}
+
+body { 
+  background-color:#98CBEB;
+font-family: 'NOto';
+}
+
+.Welcome-header {
+  margin: 40px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+}
+
+.Welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-family: 'NOto';
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+.imageOne {
+  width: 100%;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotatey(360deg);
+  }
+
+  100% {
+    transform: none;
+  }}
+
+.notification {
+  position: absolute;
+  top: 65%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  animation: notificationAnimation 2s ease-in-out infinite;
+}
+
+.img { 
+width: 450px;
+display: flex; 
+position: relative;
+margin: 0px auto;
+border-radius: 25px 15px 10px 20px;
+box-shadow: 5px 10px 20px #0077c8;
+}
+
+
+
+.badge {
+  background-color: #005eb8;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+
+.Welcome-header__title2 { font-size: 20px;}
+.Welcome-header__title3 { font-size: 17px;}
+.alram {
+  margin: 40px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+
+}
+.logo { 
+  width: 60px;
+  margin: 0;
+
+}
+
+.Welcome-header__text {
+  width: 60%;
+  opacity: 0.7;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+#login-form input[type="submit"] {
+  background-color: rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+
+.login__submit:hover {
+  background-color: #fae100;
+  transition: background-color 0.3 ease-in-out;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+}
