@@ -140,3 +140,36 @@ box-shadow: 5px 10px 20px #0077c8;
   color: inherit;
   font-size: 13px;
 }
+
+.wrap__wants {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+}
+
+.wrap__wants input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid antiquewhite;
+  opacity: 0.9;
+  padding-bottom: 5px;
+  outline: none;
+  color: antiquewhite;
+  font-size: 20px;
+  width: 45vw;
+}
+
+#wants-form input:focus::placeholder {
+  color: transparent;
+}
+
+#wants-list {
+  color: antiquewhite;
+  opacity: 0.9;
+}
+
+#wants-list button {
+  border: none;
+  background: none;
+  color: aliceblue;
+}
