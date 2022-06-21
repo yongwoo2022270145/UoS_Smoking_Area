@@ -156,7 +156,7 @@ box-shadow: 5px 10px 20px #0077c8;
   outline: none;
   color: antiquewhite;
   font-size: 20px;
-  width: 45vw;
+  width: 60vw;
 }
 
 #wants-form input:focus::placeholder {
